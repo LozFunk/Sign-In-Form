@@ -13,8 +13,8 @@ A modern sign-up form built as part of **The Odin Project** curriculum. Features
 ## Screenshots
 
 <p align="center">
-  <img src="images/screenshot_1.png"/>
-  <img src="images/screenshot_2.png" height="33%" />
+  <img src="images/screenshot_1.png"/ height="350px">
+  <img src="images/screenshot_2.png" height="350px" />
 </p>
 
 
