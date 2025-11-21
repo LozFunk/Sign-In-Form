@@ -44,9 +44,15 @@ img{
 
 }
 
-.flex{
+.flex-row{
     display: flex;
     gap: 10px;
+    width: 100%;
+}
+
+.form-container{
+    display: flex;
+    width: 250px;
     flex-direction: column;
 }
 
@@ -158,7 +164,7 @@ input:focus{
 input{
     padding: 10px;
     font-size: 16px;
-    width: 250px;
+    width: 100;
     border: none;
     border-bottom: 3px solid;
     border-color: #875cdd;
@@ -250,8 +256,16 @@ label{
         padding-left: 20px;
     }
     
+    .flex-row{
+        gap: 0px;
+    }
+
     input {
         width: 200px;
+    }
+
+    .button-container {
+        padding-left: 40px;
     }
 }
 
@@ -283,23 +297,36 @@ label{
     .odin-logo {
         width: 60px;
     }
+
+    .form-box h3 {
+        padding-left: 0;
+    }
     
     .padding {
         padding-left: 30px;
         padding-right: 30px;
         text-align: center;
     }
+
+    .flex-row{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+    }
     
     .form-container {
         flex-direction: column;
         padding-left: 0;
         align-items: center;
+        gap: 0;
     }
     
     .form-box {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 0 auto;
     }
     
     .button-container {
@@ -310,72 +337,13 @@ label{
     }
     
     input {
-        width: 100%;
-        max-width: 300px;
+        width: 258px;
     }
     
     .form-input {
         margin-right: 0;
     }
-}
-
-@media (max-width: 480px) {
-    section {
-        flex-direction: column;
-        height: auto;
-        align-items: center;
-    }
     
-    .w66 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .form-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .form-container {
-        flex-direction: column;
-        padding-left: 0;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .button-container {
-        padding-left: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-    
-    .padding {
-        text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    
-    input {
-        width: 90%;
-        max-width: 280px;
-    }
-    
-    .submit-btn {
-        width: 90%;
-        max-width: 280px;
-    }
-    
-    .form-box h3 {
-        padding-left: 20px;
-        font-size: 1rem;
-    }
 }
 
 
