@@ -10,9 +10,14 @@ A modern sign-up form built as part of **The Odin Project** curriculum. Features
 - **Form validation** — Required fields with email and password inputs
 - **Modern UI** — Clean input fields with focus states and hover effects
 
-## Screenshot
+## Screenshots
 
-![Sign-Up Form Screenshot](images/form.png)
+### Desktop View
+![Sign-Up Form Screenshot](images/screenshot_1.png)
+
+### Mobile View
+![Mobile Sign-Up Form Screenshot](images/screenshot_2.png)
+
 
 ## Live Demo
 

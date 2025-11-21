@@ -6,6 +6,10 @@ body{
     color: #f85297;
 }
 
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 section{
     display: flex;
     height: 100vh;
@@ -13,6 +17,7 @@ section{
 
 .w33{
     width: 33.33%;
+    position: relative; /* added so absolute children are positioned to this panel */
     animation: slideInLeft 700ms cubic-bezier(.16,.84,.44,1) both;
 }
 
@@ -26,6 +31,11 @@ section{
 {
     padding-left: 70px;
     padding-right: 70px;
+}
+
+h2{
+    font-size: 4rem;
+    margin-bottom: 10px;
 }
 
 img{
@@ -134,13 +144,13 @@ appearance: textfield;
 }
 
 a{
-    color: #e02271;
+    color: #f85297;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover{
-    color: #cf256c;
+    color: #e02271;
 }
 
 p{
@@ -149,10 +159,11 @@ p{
 }
 
 .odin-logo{
-    position: absolute; /* position relative to the container */
-    top: 20%; /* vertical center */
-    left: 40%; /* horizontal center */
-    width: 100px; /* adjust size as needed */
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centers vertically and horizontally relative to .w33 */
+    width: 100px;
     height: auto;
     filter: blur(0.5px);
 }
@@ -268,6 +279,10 @@ label{
     .button-container {
         padding-left: 40px;
     }
+
+    h2{
+        font-size: 3.5rem;        
+    }
 }
 
 @media (max-width: 768px) {
@@ -295,8 +310,13 @@ label{
         height: 300px;
     }
     
+    h2{
+        font-size: 2.5rem;        
+    }
+
     .odin-logo {
         width: 60px;
+        top: 30%;
     }
 
     .form-box h3 {
